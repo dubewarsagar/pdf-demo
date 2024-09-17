@@ -102,6 +102,7 @@ toc:
 table:
   border_color: "#000000"  # Use quotes around color codes
   border_width: 0.5
+  border_radius: 5
   cell_padding: [2, 2, 2, 2]  # padding for [top, right, bottom, left]
   width: 100%
   text_align: left
@@ -149,6 +150,7 @@ running-content:
 
 extends: default
 
+running-content:
 header:
   height: 0.75in
   line-height: 1
