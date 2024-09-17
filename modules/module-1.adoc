@@ -1,0 +1,10 @@
+= Module 1 Title
+
+This is the module 1 description. This can be a long enough....
+
+.Example of the code block
+
+[source,bash,options="prewrap"]
+----
+echo "This is a Bash code block with long lines that will wrap automatically when prewrap is enabled"
+----

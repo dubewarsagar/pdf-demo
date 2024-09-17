@@ -1,0 +1,16 @@
+= Module 2 Title
+
+This is the module 2 description. This can be a long enough....
+
+== Cross references
+
+=== Hyperlink to a website
+
+https://asciidoctor.org[Asciidoctor]
+
+=== Email links
+mailto:dubewar.sagar@gmail.com[Discuss]
+
+=== Cross reference to a different module
+
+For more information on how tables look like in the asciidoc document, see xref:modules/module-1.1.adoc[Examples of table]

@@ -1,0 +1,40 @@
+= User Manual
+:doctype: book
+image:1.png[]
+:toc:
+:toc-title: Table of Contents 
+:toclevels: 3
+:numbered:
+:sectanchors:
+:sectlinks:
+:showtitle:
+:imagesdir: ./images
+:revnumber: 1.0
+:docdate: 2024-09-16
+
+[[RNs]]
+<<<
+== Getting Started with {ProductName}
+This is a demonstration for one page Web documentation.
+
+[[intro]]
+<<<
+== Introduction
+
+This is a new product and this is the introduction.
+
+include::modules/module-1.adoc[leveloffset=+1]
+include::modules/module-1.1.adoc[leveloffset=+2]
+include::modules/module-2.1.adoc[leveloffset=+1]
+
+[[license]]
+<<<
+== Licensing
+
+This is the licensing related information. This cannot be avoided.
+
+[[conclusion]]
+<<<
+== Conclusion
+
+This is a demo of one page documentation. This is for local repo only.

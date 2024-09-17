@@ -1,0 +1,28 @@
+= Module 1.1 Title
+
+This is the module 1 description. This can be a long enough....
+
+== Example of table
+
+This is an example of the asciidoc table. This is a simple table. 
+
+.Title of the table 
+[%autowidth]
+//[cols="15%,60%,25%"]
+[options="header"]
+[cols="1,1,1"]
+|===
+|Sr no.
+|Description
+|Add new column
+
+
+|1
+|Value of the product
+|Add new row
+
+|===
+
+== Example of screenshot (images)
+
+image::I-NetSpeed.png[Title of the Image]

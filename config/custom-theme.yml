@@ -1,0 +1,180 @@
+page:
+  layout: portrait
+  margin: [0.75in, 1in, 0.75in, 1in]
+  size: A4
+  background_image: image:images/watermark.svg[]  # Path to your SVG watermark
+  background_image_opacity: 1  # Opacity is controlled in the SVG, so keep this at 1
+  background_image_align: center  # Aligns the watermark in the center of the page
+  background_image_scale: contain  # Ensures the SVG is scaled to fit the page
+base:
+  font_color: "#333333"
+  font_size: 12
+  line_height: 1.5
+heading:
+  font_color: "#262626"
+  font_style: bold
+  h1:
+    font_size: 24
+    margin_top: 0
+  h2:
+    font_size: 20
+    page_break_before: always
+    font_color: "#FF0000"  # Red color for h2 headings
+  h3:
+    font_size: 16
+    font_color: "#A52A2A"  # Brown color for h3 headings
+  h4:
+    font_size: 12
+    font_color: "#008000"  # Green color for h4 headings
+  h5:
+    font_size: 11
+  h6:
+    font_size: 10
+title_page:
+  header: false # Disable header on title page
+  footer: false # Disable footer on title page
+  align: right
+  logo:
+    top: 10%
+  title:
+    top: 55%
+    font_size: 24
+    font_color: "#999999"
+  subtitle:
+    font_size: 18
+    font_style: bold_italic
+    font_color: "#333333"
+  authors:
+    margin_top: 12
+    font_size: 14
+    font_color: "#181818"
+  revision:
+    margin_top: 12
+block:
+  margin_top: 12
+  margin_bottom: 12
+caption:
+  align: center
+  font_size: 10
+  font_style: italic
+code:
+  font_size: 10
+  padding: 10
+  line_height: 1.25
+  background_color: "#f5f5f5"
+  border_color: "#cccccc"
+  border_radius: 4
+conum:
+  font_color: "#D22630"
+  font_size: 11
+  line_height: 1.15
+example:
+  border_color: "#e0e0e0"
+  border_radius: 4
+  border_width: 0.75
+  background_color: "#ffffff"
+image:
+  align: center
+lead:
+  font_size: 13
+  line_height: 1.4
+link:
+  font_color: "#002FA7"
+list:
+  indent: 15
+codespan:
+  font_size: 10
+  padding: 20
+  line_height: 1.25
+  background_color: "#f5f5f5"
+  border_color: "#cccccc"
+  border_radius: 4
+toc:
+  font_size: 12
+  line_height: 2
+  title:
+    text_align: left
+    font_size: 14
+    font_style: bold
+  dots_leader: none  # You can choose 'none', 'dots', 'dashes', etc.
+  indent: 20  # Indentation for the ToC entries
+# custom-table-theme
+table:
+  border_color: "#000000"  # Use quotes around color codes
+  border_width: 0.5
+  cell_padding: [2, 2, 2, 2]  # padding for [top, right, bottom, left]
+  width: 100%
+  text_align: left
+  font_size: 10
+  content:
+    preserve: true  # enable text wrapping in cells
+    line_height: 1.5
+header:
+  background_color: "#CCCCCC"  # Gray color for header background
+  height: 30  # Adjust the header height if necessary
+  font_color: "#000000"  # Optional: Text color in the header (black)
+  line_height: 1.5  # Adjust the line height if needed
+  padding: [10, 0, 0, 0]  # Optional: Padding for header content [top, right, bottom, left]
+table_caption:
+  side: top  # Place the table title at the bottom
+  text_align: center  # Center the table title
+  font_size: 10
+  line_height: 1.2
+  padding: [6, 0, 0, 0]  # Add some space above the caption
+table_cell:
+  padding: [2, 2, 2, 2]  # Padding for table cells
+  text_align: left  # Align text to the left within table cells
+  border_color: "#000000"
+  border_width: 1.5  # Border width for table cells
+  content:
+    preserve: true  # Enables text wrapping for long text within table cells
+
+running-content:
+  start-at: after-toc
+
+# extends: default
+# header:
+#   background-image: image::running-content-bg.png[]
+#   height: 0.75in
+#   line-height: 1
+# footer:
+#   height: 0.75in
+#   line-height: 1
+#   recto:
+#     center:
+#       content: 'Copyright (C) 2024, Citibank N.A. All Rights Reserved. -- v{revnumber}, {docdate}'
+#   verso:
+#     center:
+#       content: $footer-recto-center-content
+
+extends: default
+
+header:
+  height: 0.75in
+  line-height: 1
+  background-image: image::running-content-bg.png[[pdfwidth=15pt]]
+  margin: [0, inherit]
+  content-margin: [0, inherit]
+  padding: [10, 0, 0, 10]
+  recto:
+    center:
+      content: '{header-content}'
+      content-margin: 0 # Set margin to zero to avoid extra space
+
+  verso:
+    center:
+      content: '{header-content}'
+      content-margin: 0 # Set margin to zero to avoid extra space
+
+footer:
+  height: 30
+  recto:
+    center:
+      content: 'Copyright (C) 2024, CompanyName. All Rights Reserved. -- v{revnumber}'
+# header:
+#   border_width: 0.25
+#   border_color: dddddd
+#   margin: 0
+#   background-image: image::running-content-bg.png[]
+#   padding: [3, auto]
+#   content-margin: 0
