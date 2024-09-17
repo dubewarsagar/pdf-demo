@@ -10,6 +10,12 @@
 :imagesdir: ./images
 :revnumber: 1.0
 :docdate: 2024-09-16
+:pdf-path: index.pdf
+
+[.text-center]
+++++
+<a href="{pdf-path}" class="pdf-button" target="_blank">Download PDF</a>
+++++
 
 [[RNs]]
 <<<
